@@ -1,0 +1,19 @@
+@import '../../../../../styles';
+
+.container {
+  min-height: 70vh;
+}
+
+img {
+  width: to-rem(319px);
+  height: to-rem(319px);
+  border-radius: 50%;
+}
+
+.content {
+  max-width: to-rem(560px);
+
+  .photographer-name {
+    font-size: to-rem(24px);
+  }
+}

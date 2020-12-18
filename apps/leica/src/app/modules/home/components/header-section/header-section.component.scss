@@ -1,0 +1,25 @@
+@import '../../../../../styles';
+
+.bg-img {
+  background-image: url('../../../../../assets/sharegrid-N10auyEVst8-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: to-rem(660px);
+}
+
+.heading-title {
+  font-family: 'Lobster', sans-serif;
+  font-size: to-rem(44px);
+}
+
+.container {
+  padding-top: to-rem(300px);
+
+  @include media-breakpoint-up(md) {
+    padding-top: to-rem(380px);
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-top: to-rem(480px);
+  }
+}
