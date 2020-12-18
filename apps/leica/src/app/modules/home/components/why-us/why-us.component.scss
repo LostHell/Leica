@@ -1,0 +1,11 @@
+@import '../../../../../styles';
+
+.container {
+  background-color: color('white');
+  color: color('dark-gray');
+
+  i {
+    font-size: to-rem(32px);
+    color: color('pink');
+  }
+}

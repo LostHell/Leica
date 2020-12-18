@@ -1,10 +1,14 @@
 @import '../../../../../styles';
 
 .bg-img {
-  background-image: url('../../../../../assets/sharegrid-N10auyEVst8-unsplash.jpg');
+  background-image: url('../../../../../assets/Leika camera.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: to-rem(660px);
+  min-height: to-rem(560px);
+
+  @include media-breakpoint-up(md) {
+    min-height: to-rem(728px);
+  }
 }
 
 .heading-title {

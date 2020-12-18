@@ -5,10 +5,25 @@ import { FooterComponent } from './components/layout/footer/footer.component';
 import { ButtonComponent } from './components/button/button/button.component';
 import { MaterialModule } from '../material/material.module';
 import { RouterModule } from '@angular/router';
+import { ReactiveInputComponent } from './components/form/reactive-input/reactive-input.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { TextAreaInputComponent } from './components/form/text-area-input/text-area-input.component';
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, ButtonComponent],
-  exports: [FooterComponent, HeaderComponent, ButtonComponent],
-  imports: [CommonModule, MaterialModule, RouterModule],
+  declarations: [
+    HeaderComponent,
+    FooterComponent,
+    ButtonComponent,
+    ReactiveInputComponent,
+    TextAreaInputComponent,
+  ],
+  exports: [
+    FooterComponent,
+    HeaderComponent,
+    ButtonComponent,
+    ReactiveInputComponent,
+    TextAreaInputComponent,
+  ],
+  imports: [CommonModule, MaterialModule, RouterModule, ReactiveFormsModule],
 })
 export class SharedModule {}

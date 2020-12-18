@@ -1,0 +1,7 @@
+@import '../../../../../../styles';
+
+mat-form-field {
+  @include media-breakpoint-up(md) {
+    width: to-rem(420px);
+  }
+}

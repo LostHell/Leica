@@ -2,16 +2,30 @@
 
 .container {
   min-height: 70vh;
+
+  .photographers {
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      text-align: unset;
+    }
+  }
 }
 
 img {
-  width: to-rem(319px);
-  height: to-rem(319px);
+  margin: 0 auto;
+  width: to-rem(294px);
+  height: to-rem(294px);
   border-radius: 50%;
+  object-fit: cover;
+
+  @include media-breakpoint-up(md) {
+    margin: 0;
+  }
 }
 
 .content {
-  max-width: to-rem(560px);
+  max-width: to-rem(460px);
 
   .photographer-name {
     font-size: to-rem(24px);
