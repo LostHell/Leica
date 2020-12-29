@@ -1,0 +1,16 @@
+@import '../../../../styles';
+
+.bg-img-login {
+  background-image: url('../../../../assets/miss-zhang-jz0xIgcwyL0-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(to-rem(3px));
+  min-height: to-rem(728px);
+}
+
+form {
+  position: absolute;
+  top: to-rem(140px);
+  left: 0;
+  right: 0;
+}

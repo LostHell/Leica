@@ -1,0 +1,31 @@
+@import '../../../../../../styles';
+
+.fileuploader {
+  border-radius: to-rem(4px);
+  color: color('dark-gray');
+
+  mat-icon {
+    font-size: to-rem(46px);
+    width: to-rem(46px);
+    height: to-rem(46px);
+  }
+
+  img:nth-child(odd) {
+    padding: to-rem(8px) to-rem(8px) to-rem(8px) to-rem(16px);
+  }
+
+  img:nth-child(even) {
+    padding: to-rem(8px) to-rem(16px) to-rem(8px) to-rem(8px);
+  }
+
+  @include media-breakpoint-up(md) {
+    img:nth-child(odd),
+    img:nth-child(even) {
+      padding: to-rem(8px) to-rem(8px) to-rem(8px) to-rem(8px);
+    }
+  }
+
+  .info {
+    color: #a0a1a2;
+  }
+}

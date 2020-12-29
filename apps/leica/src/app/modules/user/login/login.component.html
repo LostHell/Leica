@@ -1,0 +1,20 @@
+<div class="bg-img-login"></div>
+<form [formGroup]="form" class="d-flex flex-column align-items-center mt-5">
+  <app-reactive-input
+    [form]="form"
+    label="Email"
+    name="email"
+    type="text"
+    error="Email is required!"
+    class="px-2"
+  ></app-reactive-input>
+  <app-reactive-input
+    [form]="form"
+    label="Password"
+    name="password"
+    type="text"
+    error="Password is required!"
+    class="px-2"
+  ></app-reactive-input>
+  <app-button>Login</app-button>
+</form>

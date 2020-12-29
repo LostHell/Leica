@@ -1,0 +1,35 @@
+@import '../../../../styles';
+
+.bg-img-register {
+  background-image: url('../../../../assets/matt-antonioli---b01C5Tqtc-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(to-rem(3px));
+  min-height: to-rem(868px);
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+mat-vertical-stepper {
+  background-color: transparent;
+  margin: to-rem(14px) auto 0 auto;
+
+  @include media-breakpoint-up(md) {
+    margin-top: to-rem(42px);
+    width: 75%;
+  }
+
+  button:hover {
+    background-color: color('white');
+    color: color('dark-gray');
+  }
+
+  app-file-uploader {
+    width: to-rem(203px);
+  }
+}

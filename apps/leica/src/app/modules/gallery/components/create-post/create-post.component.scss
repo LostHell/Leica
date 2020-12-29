@@ -1,0 +1,13 @@
+@import '../../../../../styles';
+
+app-reactive-input:first-child {
+  width: 100%;
+
+  ::ng-deep:first-child {
+    min-width: 99%;
+
+    @include media-breakpoint-up(md) {
+      width: 90%;
+    }
+  }
+}

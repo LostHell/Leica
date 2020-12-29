@@ -16,14 +16,10 @@
     background-color: color('dark-red');
     color: color('white');
   }
-
-  @include media-breakpoint-up(md) {
-    flex: 1;
-  }
 }
 
-nav {
-  @include media-breakpoint-up(md) {
-    flex: 1.5;
-  }
+#toggle {
+  background: transparent;
+  outline: none;
+  right: to-rem(14px);
 }

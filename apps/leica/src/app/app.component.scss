@@ -1,7 +1,12 @@
 @import '../styles';
 
-.main-content {
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+mat-sidenav-content {
   background-color: color('dark-gray');
   color: color('white');
-  min-height: 90vh;
 }

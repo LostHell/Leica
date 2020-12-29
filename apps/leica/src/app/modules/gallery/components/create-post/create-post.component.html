@@ -1,0 +1,22 @@
+<h1 mat-dialog-title class="text-center pt-3">Create own post</h1>
+<div mat-dialog-content class="border-bottom my-3">
+  <form [formGroup]="form">
+    <app-file-uploader label="Upload file"></app-file-uploader>
+    <div
+      class="d-flex flex-column flex-md-row align-items-center justify-content-md-between pb-2 pb-md-0"
+    >
+      <app-reactive-input
+        [form]="form"
+        class="text-center text-md-left pt-2 pt-md-3"
+        label="Comment"
+        name="comment"
+        type="text"
+        error="Comment is required!"
+      ></app-reactive-input>
+      <app-button class="align-self-md-center mb-1">Create</app-button>
+    </div>
+  </form>
+  <div mat-dialog-actions>
+    <!--  <button mat-button mat-dialog-close>Close</button>-->
+  </div>
+</div>

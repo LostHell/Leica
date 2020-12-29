@@ -1,0 +1,15 @@
+@import '../../../../../../styles';
+
+mat-card {
+  background-color: color('white');
+  color: color('dark-gray');
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+app-button ::ng-deep button {
+  width: 8rem;
+}

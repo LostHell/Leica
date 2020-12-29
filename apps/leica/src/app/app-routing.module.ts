@@ -8,6 +8,23 @@ const routes: Routes = [
       import('./modules/home/home.module').then((m) => m.HomeModule),
     pathMatch: 'full',
   },
+  {
+    path: 'gallery',
+    loadChildren: () =>
+      import('./modules/gallery/gallery.module').then((m) => m.GalleryModule),
+  },
+  {
+    path: 'hire',
+    loadChildren: () =>
+      import('./modules/photographer/photographer.module').then(
+        (m) => m.PhotographerModule
+      ),
+  },
+  {
+    path: 'user',
+    loadChildren: () =>
+      import('./modules/user/user.module').then((m) => m.UserModule),
+  },
 ];
 
 @NgModule({
