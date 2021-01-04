@@ -1,29 +1,28 @@
 <mat-card class="example-card">
-  <img
-    mat-card-image
-    src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-    alt="Photo of a Shiba Inu"
-  />
+  <img [src]="photographer.imageSrc" mat-card-image alt="Photo Not Found!" />
   <mat-card-content class="m-0">
     <section class="d-flex justify-content-between">
       <p class="my-1">Photographer:</p>
-      <p class="my-1">John Doe</p>
+      <p class="my-1">{{ photographer.name }}</p>
     </section>
     <section class="d-flex justify-content-between">
       <p class="my-1">Country:</p>
-      <p class="my-1">Germany</p>
+      <p class="my-1">{{ photographer.country }}</p>
     </section>
     <section class="d-flex justify-content-between">
       <p class="my-1">City:</p>
-      <p class="my-1">Berlin</p>
+      <p class="my-1">{{ photographer.city }}</p>
     </section>
     <section class="d-flex justify-content-between">
       <p class="my-1">Interest:</p>
-      <p class="my-1">Wedding</p>
+      <p class="my-1">{{ photographer.interest }}</p>
     </section>
     <section class="d-flex justify-content-between">
       <p class="my-1">Price:</p>
-      <p class="my-1"><span>120</span>/h</p>
+      <p class="my-1">
+        <span>{{ photographer.price }}</span
+        >/h
+      </p>
     </section>
   </mat-card-content>
   <mat-card-actions class="d-flex justify-content-between">

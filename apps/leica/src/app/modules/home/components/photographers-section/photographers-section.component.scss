@@ -1,14 +1,10 @@
 @import '../../../../../styles';
 
-.container {
-  min-height: 70vh;
+.photographers {
+  text-align: center;
 
-  .photographers {
-    text-align: center;
-
-    @include media-breakpoint-up(md) {
-      text-align: unset;
-    }
+  @include media-breakpoint-up(md) {
+    text-align: unset;
   }
 }
 

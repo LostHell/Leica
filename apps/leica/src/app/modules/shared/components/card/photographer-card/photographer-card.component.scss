@@ -3,11 +3,11 @@
 mat-card {
   background-color: color('white');
   color: color('dark-gray');
-}
 
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
+  img {
+    min-height: to-rem(280px);
+    object-fit: cover;
+  }
 }
 
 app-button ::ng-deep button {
