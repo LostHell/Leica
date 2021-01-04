@@ -1,8 +1,8 @@
 <mat-card>
   <mat-card-header class="position-relative">
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Sphiba Iqnu</mat-card-title>
-    <mat-card-subtitle class="text-muted">02.02.2020</mat-card-subtitle>
+    <img [src]="item.avatar" class="avatar-image" mat-card-avatar />
+    <mat-card-title>{{ item.name }}</mat-card-title>
+    <mat-card-subtitle class="text-muted">{{ item.date }}</mat-card-subtitle>
     <button
       class="option-btn position-absolute rounded-circle"
       mat-icon-button
@@ -13,15 +13,13 @@
     </button>
   </mat-card-header>
   <img
+    [src]="item.imageSrc"
+    class="content-image"
     mat-card-image
-    src="https://cdn.motor1.com/images/mgl/Wpyro/s1/audi-rs6-avant-by-wheelsandmore-lead-image.jpg"
-    alt="Photo of a Shiba Inu"
+    alt="Not found!"
   />
   <mat-card-content>
-    <p>
-      The Shiba Inu is the smallest of the six original and distinct spitz
-      breeds of d...
-    </p>
+    <p>{{ item.content }}</p>
   </mat-card-content>
   <mat-card-actions class="d-flex justify-content-between p-0">
     <div>

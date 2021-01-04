@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-gallery-card',
   templateUrl: './gallery-card.component.html',
-  styleUrls: ['./gallery-card.component.scss']
+  styleUrls: ['./gallery-card.component.scss'],
 })
-export class GalleryCardComponent implements OnInit {
+export class GalleryCardComponent {
+  @Input() item: {
+    avatar;
+    name;
+    date;
+    imageSrc;
+    content;
+  };
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  constructor() {}
 }

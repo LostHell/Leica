@@ -1,11 +1,11 @@
 <div class="container">
   <app-create-post></app-create-post>
   <div class="row">
-    <app-gallery-card class="py-3 col-12 col-md-6 col-lg-4"></app-gallery-card>
-    <app-gallery-card class="py-3 col-12 col-md-6 col-lg-4"></app-gallery-card>
-    <app-gallery-card class="py-3 col-12 col-md-6 col-lg-4"></app-gallery-card>
-    <app-gallery-card class="py-3 col-12 col-md-6 col-lg-4"></app-gallery-card>
-    <app-gallery-card class="py-3 col-12 col-md-6 col-lg-4"></app-gallery-card>
-    <app-gallery-card class="py-3 col-12 col-md-6 col-lg-4"></app-gallery-card>
+    <ng-container *ngFor="let item of items">
+      <app-gallery-card
+        [item]="item"
+        class="py-3 col-12 col-md-6 col-lg-4"
+      ></app-gallery-card>
+    </ng-container>
   </div>
 </div>

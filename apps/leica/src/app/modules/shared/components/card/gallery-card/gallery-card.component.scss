@@ -23,12 +23,16 @@ mat-card {
     font-size: to-rem(12px);
   }
 
+  .content-image {
+    min-height: to-rem(197px);
+    object-fit: cover;
+  }
+
   mat-card-content {
     margin-bottom: to-rem(7px);
   }
 }
 
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+.avatar-image {
   background-size: cover;
 }

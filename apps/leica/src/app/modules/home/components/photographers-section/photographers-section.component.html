@@ -3,57 +3,10 @@
   <div
     class="photographers d-flex flex-column flex-md-row justify-content-around py-5"
   >
-    <img src="./assets/jakob-owens-DQPP9rVLYGQ-unsplash.jpg" />
+    <img [src]="photographer.imageSrc" />
     <div class="content align-self-center ml-md-5">
-      <p class="photographer-name">Name: Jakob Owens</p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at
-        consectetur consequatur dolores esse excepturi id iste iure labore
-        laudantium magnam maiores maxime, minus molestias officiis
-        reprehenderit, vel veritatis? Similique!
-      </p>
-    </div>
-  </div>
-  <div
-    class="photographers d-flex flex-column flex-md-row justify-content-around py-5"
-  >
-    <img src="./assets/Isabela.jpg" />
-    <div class="content align-self-center ml-md-5">
-      <p class="photographer-name">Name: Isabela Oliver</p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at
-        consectetur consequatur dolores esse excepturi id iste iure labore
-        laudantium magnam maiores maxime, minus molestias officiis
-        reprehenderit, vel veritatis? Similique!
-      </p>
-    </div>
-  </div>
-  <div
-    class="photographers d-flex flex-column flex-md-row justify-content-around py-5"
-  >
-    <img src="./assets/Mike%20Jo.jpg" />
-    <div class="content align-self-center ml-md-5">
-      <p class="photographer-name">Name: Mike Johnson</p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at
-        consectetur consequatur dolores esse excepturi id iste iure labore
-        laudantium magnam maiores maxime, minus molestias officiis
-        reprehenderit, vel veritatis? Similique!
-      </p>
-    </div>
-  </div>
-  <div
-    class="photographers d-flex flex-column flex-md-row justify-content-around py-5"
-  >
-    <img src="./assets/joshua-harvey-9y_etjI7QPI-unsplash.jpg" />
-    <div class="content align-self-center ml-md-5">
-      <p class="photographer-name">Name: Joshua Harvey</p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at
-        consectetur consequatur dolores esse excepturi id iste iure labore
-        laudantium magnam maiores maxime, minus molestias officiis
-        reprehenderit, vel veritatis? Similique!
-      </p>
+      <p class="photographer-name">Name: {{ photographer.name }}</p>
+      <p>{{ photographer.description }}</p>
     </div>
   </div>
 </div>

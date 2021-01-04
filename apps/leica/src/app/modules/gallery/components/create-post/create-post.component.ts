@@ -7,7 +7,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./create-post.component.scss'],
 })
 export class CreatePostComponent implements OnInit {
-  form: FormGroup;
+  formPost: FormGroup;
 
   constructor() {}
 
@@ -16,7 +16,7 @@ export class CreatePostComponent implements OnInit {
   }
 
   createForm() {
-    this.form = new FormGroup({
+    this.formPost = new FormGroup({
       comment: new FormControl('', [Validators.required]),
     });
   }

@@ -1,7 +1,11 @@
 <app-header-section></app-header-section>
-<app-photographers-section></app-photographers-section>
+<ng-container *ngFor="let photographer of photographers">
+  <app-photographers-section
+    [photographer]="photographer"
+  ></app-photographers-section>
+</ng-container>
 <app-why-us></app-why-us>
 <app-message-section
-  [form]="form"
-  (submitData)="submitMessageData($event)"
+  [form]="formMessage"
+  (submitData)="submitMessageData()"
 ></app-message-section>
