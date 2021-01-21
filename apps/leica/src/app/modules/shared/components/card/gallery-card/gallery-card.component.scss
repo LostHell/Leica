@@ -15,7 +15,7 @@ mat-card {
 
   .option-btn {
     top: 0;
-    right: 0;
+    right: to-rem(-9px);
   }
 
   mat-card-subtitle {

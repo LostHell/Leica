@@ -1,11 +1,14 @@
 @import '../../../../styles';
 
 .bg-img-register {
-  background-image: url('../../../../assets/matt-antonioli---b01C5Tqtc-unsplash.jpg');
+  background-image: url('../../../../assets/pexels-marek-339379.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  filter: blur(to-rem(3px));
-  min-height: to-rem(868px);
+  min-height: to-rem(840px);
+
+  @include media-breakpoint-up(md) {
+    min-height: to-rem(896px);
+  }
 }
 
 .container {

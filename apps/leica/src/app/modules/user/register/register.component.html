@@ -1,95 +1,96 @@
-<div class="bg-img-register"></div>
-<div class="container">
-  <mat-vertical-stepper #stepper>
-    <mat-step [stepControl]="firstFormGroup">
-      <form [formGroup]="firstFormGroup" class="d-flex flex-column">
-        <ng-template matStepLabel>Fill out your account info</ng-template>
-        <app-reactive-input
-          [form]="firstFormGroup"
-          label="Name"
-          name="name"
-          type="text"
-          error="Name is required!"
-        ></app-reactive-input>
-        <app-reactive-input
-          [form]="firstFormGroup"
-          label="Email"
-          name="email"
-          type="email"
-          error="Email is required!"
-        ></app-reactive-input>
-        <app-reactive-input
-          [form]="firstFormGroup"
-          label="Phone"
-          name="phone"
-          type="text"
-          error="Phone is required!"
-        ></app-reactive-input>
-        <app-reactive-input
-          [form]="firstFormGroup"
-          label="Password"
-          name="password"
-          type="password"
-          error="Password is required!"
-        ></app-reactive-input>
-        <app-reactive-input
-          [form]="firstFormGroup"
-          label="Repeat Password"
-          name="repeatPassword"
-          type="password"
-          error="Repeat password is required!"
-        ></app-reactive-input>
-        <app-file-uploader
-          class="mb-3"
-          label="Profile picture"
-        ></app-file-uploader>
-        <div>
-          <button mat-button matStepperNext>Next</button>
+<div class="bg-img-register">
+  <div class="container">
+    <mat-vertical-stepper #stepper>
+      <mat-step [stepControl]="firstFormGroup">
+        <form [formGroup]="firstFormGroup" class="d-flex flex-column">
+          <ng-template matStepLabel>Fill out your account info</ng-template>
+          <app-reactive-input
+            [form]="firstFormGroup"
+            label="Name"
+            name="name"
+            type="text"
+            error="Name is required!"
+          ></app-reactive-input>
+          <app-reactive-input
+            [form]="firstFormGroup"
+            label="Email"
+            name="email"
+            type="email"
+            error="Email is required!"
+          ></app-reactive-input>
+          <app-reactive-input
+            [form]="firstFormGroup"
+            label="Phone"
+            name="phone"
+            type="text"
+            error="Phone is required!"
+          ></app-reactive-input>
+          <app-reactive-input
+            [form]="firstFormGroup"
+            label="Password"
+            name="password"
+            type="password"
+            error="Password is required!"
+          ></app-reactive-input>
+          <app-reactive-input
+            [form]="firstFormGroup"
+            label="Repeat Password"
+            name="repeatPassword"
+            type="password"
+            error="Repeat password is required!"
+          ></app-reactive-input>
+          <app-file-uploader
+            class="mb-3"
+            label="Profile picture"
+          ></app-file-uploader>
+          <div>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="secondFormGroup">
+        <form [formGroup]="secondFormGroup" class="d-flex flex-column">
+          <ng-template matStepLabel>Fill out your address</ng-template>
+          <app-reactive-input
+            [form]="secondFormGroup"
+            label="Country"
+            name="country"
+            type="text"
+            error="Country is required!"
+          ></app-reactive-input>
+          <app-reactive-input
+            [form]="secondFormGroup"
+            label="City"
+            name="city"
+            type="text"
+            error="City is required!"
+          ></app-reactive-input>
+          <app-reactive-input
+            [form]="secondFormGroup"
+            label="Street"
+            name="street"
+            type="text"
+            error="Street is required!"
+          ></app-reactive-input>
+          <app-reactive-input
+            [form]="secondFormGroup"
+            label="House number"
+            name="houseNumber"
+            type="text"
+            error="House number is required!"
+          ></app-reactive-input>
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>Done</ng-template>
+        <div class="pt-3">
+          <app-button>Register</app-button>
         </div>
-      </form>
-    </mat-step>
-    <mat-step [stepControl]="secondFormGroup">
-      <form [formGroup]="secondFormGroup" class="d-flex flex-column">
-        <ng-template matStepLabel>Fill out your address</ng-template>
-        <app-reactive-input
-          [form]="secondFormGroup"
-          label="Country"
-          name="country"
-          type="text"
-          error="Country is required!"
-        ></app-reactive-input>
-        <app-reactive-input
-          [form]="secondFormGroup"
-          label="City"
-          name="city"
-          type="text"
-          error="City is required!"
-        ></app-reactive-input>
-        <app-reactive-input
-          [form]="secondFormGroup"
-          label="Street"
-          name="street"
-          type="text"
-          error="Street is required!"
-        ></app-reactive-input>
-        <app-reactive-input
-          [form]="secondFormGroup"
-          label="House number"
-          name="houseNumber"
-          type="text"
-          error="House number is required!"
-        ></app-reactive-input>
-        <div>
-          <button mat-button matStepperPrevious>Back</button>
-          <button mat-button matStepperNext>Next</button>
-        </div>
-      </form>
-    </mat-step>
-    <mat-step>
-      <ng-template matStepLabel>Done</ng-template>
-      <div class="pt-3">
-        <app-button>Register</app-button>
-      </div>
-    </mat-step>
-  </mat-vertical-stepper>
+      </mat-step>
+    </mat-vertical-stepper>
+  </div>
 </div>

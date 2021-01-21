@@ -1,11 +1,15 @@
 @import '../../../../styles';
 
 .bg-img-login {
-  background-image: url('../../../../assets/miss-zhang-jz0xIgcwyL0-unsplash.jpg');
+  background-image: url('../../../../assets/pexels-markus-spiske-4403171.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  filter: blur(to-rem(3px));
-  min-height: to-rem(728px);
+  //filter: blur(to-rem(3px));
+  min-height: to-rem(660px);
+
+  @include media-breakpoint-up(md) {
+    min-height: to-rem(896px);
+  }
 }
 
 form {

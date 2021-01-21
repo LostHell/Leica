@@ -10,13 +10,15 @@
 
 img {
   margin: 0 auto;
-  width: to-rem(294px);
-  height: to-rem(294px);
+  width: to-rem(210px);
+  height: to-rem(210px);
   border-radius: 50%;
   object-fit: cover;
 
   @include media-breakpoint-up(md) {
     margin: 0;
+    width: to-rem(294px);
+    height: to-rem(294px);
   }
 }
 
